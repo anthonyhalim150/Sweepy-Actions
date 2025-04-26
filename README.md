@@ -67,9 +67,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 18
-      - run: npm install
+      - name: Install dependencies
+        run: |
+          if [ -f package.json ]; then
+            npm install
+          fi
       - name: Run Sweepy
         uses: anthonyhalim150/Sweepy-Actions@v1
+
+      
 ```
 
 ✅ No arguments needed — Sweepy auto-detects everything by default.
@@ -103,6 +109,12 @@ _(No arguments needed — Sweepy will detect everything automatically.)_
   with:
     args: '--detect js css links'
 ```
+---
+
+# 📚 Full Usage Example
+
+📖 [See full usage and examples →](./USAGE.md)
+
 
 ---
 

@@ -12,5 +12,5 @@ runs:
   main: 'entry.js'
 
 branding:
-  icon: 'search'
-  color: 'purple'
+  icon: 'box'
+  color: 'orange'
