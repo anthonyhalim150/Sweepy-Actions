@@ -1,0 +1,16 @@
+name: 'Sweepy Action'
+description: 'Run Sweepy to detect unused files, css, exports, assets, links, and more in your GitHub workflows.'
+author: 'anthonyhalim150'
+
+inputs:
+  args:
+    description: 'Arguments to pass to Sweepy CLI (optional)'
+    required: false
+
+runs:
+  using: 'node16'
+  main: 'entry.js'
+
+branding:
+  icon: 'search'
+  color: 'purple'
